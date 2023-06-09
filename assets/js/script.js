@@ -1,6 +1,6 @@
 //EJERCICIO 1
 function Linea() {
-  var image = document.querySelector("img");
+  let image = document.querySelector("img");
   if (image.style.border === "2px solid red") {
     image.style.border = "none";
   } else {
@@ -12,11 +12,11 @@ function Linea() {
 
 //EJERCICIO 2
 function calcular() {
-  var cantHarley = document.querySelector("#cantHarley").value;
-  var cantHonda = document.querySelector("#cantHonda").value;
-  var cantYamaha = document.querySelector("#cantYamaha").value;
+  let cantHarley = document.querySelector("#cantHarley").value;
+  let cantHonda = document.querySelector("#cantHonda").value;
+  let cantYamaha = document.querySelector("#cantYamaha").value;
 
-  var resultado = Number(cantHarley) + Number(cantHonda) + Number(cantYamaha);
+  let resultado = Number(cantHarley) + Number(cantHonda) + Number(cantYamaha);
 
   if (cantHarley === "" || cantHonda === "" || cantYamaha === "") {
     document.querySelector("#textoResultado").innerHTML =
@@ -45,9 +45,9 @@ function calcular() {
 
 //EJERCICIO 3
 function validarPassword() {
-  var num1 = document.querySelector("#num1").value;
-  var num2 = document.querySelector("#num2").value;
-  var num3 = document.querySelector("#num3").value;
+  let num1 = document.querySelector("#num1").value;
+  let num2 = document.querySelector("#num2").value;
+  let num3 = document.querySelector("#num3").value;
 
   if (num1 === "0" || num2 === "0" || num3 === "0") {
     document.querySelector("#textValidacion").innerHTML =
